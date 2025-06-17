@@ -253,30 +253,7 @@
 				flex: 1;
 			}
 
-			@media screen and (max-width: 980px) {
-				.split-content {
-					flex-direction: column;
-					gap: 2em;
-					padding: 1em;
-				}
-
-				.audience-segments {
-					grid-template-columns: 1fr;
-					gap: 1em;
-				}
-
-				.audience-segment {
-					padding: 1.2em;
-				}
-
-				#two h2 {
-					font-size: 2em;
-				}
-
-				.content.box {
-					padding: 2em;
-				}
-
+			@media screen and (max-width: 736px) {
 				.content.box.style2 {
 					max-width: 90%;
 					width: 90%;
@@ -294,29 +271,6 @@
 
 				.contact-image {
 					order: 0;
-				}
-			}
-
-			/* Animation classes */
-			.fade-in {
-				opacity: 0;
-				animation: fadeIn 1s ease forwards;
-			}
-
-			.slide-in {
-				opacity: 0;
-				transform: translateY(20px);
-				animation: slideIn 1s ease forwards;
-			}
-
-			@keyframes fadeIn {
-				to { opacity: 1; }
-			}
-
-			@keyframes slideIn {
-				to {
-					opacity: 1;
-					transform: translateY(0);
 				}
 			}
 		</style>
@@ -340,12 +294,12 @@
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content">
-					<header class="fade-in">
+					<header>
 						<h2>Shaping the Future of Learning</h2>
 					</header>
-					<p class="slide-in">An intelligent platform for educators, learners, and organisations.</p>
+					<p>An intelligent platform for educators, learners, and organisations.</p>
 					<footer>
-						<a href="#contact" class="button style2 fade-in">Join the Waitlist</a>
+						<a href="#contact" class="button style2">Join the Waitlist</a>
 					</footer>
 				</div>
 			</section>
@@ -354,10 +308,10 @@
 			<section id="one" class="main style2 right dark fullscreen">
 				<div class="section-background"></div>
 				<div class="content box style2">
-					<header class="fade-in">
+					<header>
 						<h2>The Problem We're Solving</h2>
 					</header>
-					<div class="fade-in">
+					<div>
 						<p>We're working on a solution that brings <span class="highlight">simplicity</span>, <span class="highlight">speed</span>, and <span class="highlight">personalisation</span> to education and training.</p>
 						<p>Our platform leverages cutting-edge AI to transform how educational content is created, delivered, and experienced.</p>
 					</div>
@@ -369,23 +323,23 @@
 			<section id="two" class="main style2 left dark fullscreen">
 				<div class="section-background"></div>
 				<div class="content box style2">
-					<header class="fade-in">
+					<header>
 						<h2>Who We Serve</h2>
 					</header>
 					<div class="audience-segments">
-						<div class="audience-segment slide-in">
+						<div class="audience-segment">
 							<h3><i class="fas fa-school"></i>Schools & Educators</h3>
 							<p>Transform your teaching with AI-powered content creation and personalized learning paths that adapt to each student's needs.</p>
 						</div>
-						<div class="audience-segment slide-in">
+						<div class="audience-segment">
 							<h3><i class="fas fa-users"></i>Training Teams & L&D Professionals</h3>
 							<p>Scale your training programs efficiently with intelligent content generation and automated assessment tools.</p>
 						</div>
-						<div class="audience-segment slide-in">
+						<div class="audience-segment">
 							<h3><i class="fas fa-home"></i>Parents & Home Educators</h3>
 							<p>Create engaging learning experiences at home with easy-to-use tools that make education interactive and fun.</p>
 						</div>
-						<div class="audience-segment slide-in">
+						<div class="audience-segment">
 							<h3><i class="fas fa-book"></i>Curriculum Developers</h3>
 							<p>Design adaptive learning pathways that evolve with learner progress and provide meaningful insights.</p>
 						</div>
@@ -397,19 +351,19 @@
 		<!-- Vision -->
 			<section id="vision" class="main style3 primary">
 				<div class="content">
-					<header class="fade-in">
+					<header>
 						<h2>Our Vision</h2>
 					</header>
 					<div class="vision-container">
-						<div class="vision-point slide-in">
+						<div class="vision-point">
 							<h3><i class="fas fa-brain"></i> Adaptive Learning</h3>
 							<p>"We believe content should adapt to learners—not the other way around."</p>
 						</div>
-						<div class="vision-point slide-in">
+						<div class="vision-point">
 							<h3><i class="fas fa-clock"></i> Efficiency</h3>
 							<p>"Imagine creating a full, interactive experience in minutes, not hours."</p>
 						</div>
-						<div class="vision-point slide-in">
+						<div class="vision-point">
 							<h3><i class="fas fa-users"></i> Inclusive Education</h3>
 							<p>"We're combining human intuition with intelligent systems to make learning scalable, inclusive, and engaging."</p>
 						</div>
@@ -420,15 +374,15 @@
 		<!-- Contact -->
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
-					<header class="fade-in">
+					<header>
 						<h2>Be the First to Know</h2>
 						<p>Join our waitlist to get early access and updates about Templastic.</p>
 					</header>
 					<div class="contact-container">
-						<div class="contact-image slide-in">
+						<div class="contact-image">
 							<img src="images/ai-education/fulls/ai-education-collaboration.jpg" alt="AI Education Collaboration" class="ai-image" />
 						</div>
-						<div class="contact-form slide-in">
+						<div class="contact-form">
 							<div class="box">
 								<form method="post" action="#" id="waitlistForm">
 									<div class="fields">
