@@ -1944,6 +1944,8 @@ input, select, textarea {
 		}
 
 		.main.style1 {
+			background: url("images/overlay.png");
+			color: #fff;
 			-moz-align-items: center;
 			-webkit-align-items: center;
 			-ms-align-items: center;
@@ -1979,6 +1981,8 @@ input, select, textarea {
 			}
 
 		.main.style2 {
+			background: url("images/overlay.png");
+			color: #fff;
 			-moz-align-items: center;
 			-webkit-align-items: center;
 			-ms-align-items: center;
@@ -2034,6 +2038,8 @@ input, select, textarea {
 			}
 
 		.main.style3 {
+			background: url("images/overlay.png");
+			color: #fff;
 			text-align: center;
 			padding: 6em 0 6em 0;
 		}
@@ -2244,29 +2250,22 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		background: url("images/overlay.png");
+		color: #fff;
 	}
 
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url("images/overlay.png");
+		color: #fff;
 	}
 
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url("images/overlay.png");
+		color: #fff;
 	}
 
 /* Contact */

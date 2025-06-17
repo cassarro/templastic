@@ -208,32 +208,45 @@
 			/* Vision Section Styles */
 			.vision-container {
 				display: flex;
+				flex-direction: column;
 				gap: 2em;
-				margin: 2em 0;
+				margin-top: 2em;
 			}
 
 			.vision-point {
-				flex: 1;
-				background: rgba(255, 255, 255, 0.1);
-				padding: 2em;
+				background: rgba(255, 255, 255, 0.05);
+				padding: 1.5em;
 				border-radius: 15px;
 				transition: all 0.3s ease;
+				backdrop-filter: blur(5px);
 				border: 1px solid rgba(255, 255, 255, 0.1);
 			}
 
 			.vision-point:hover {
 				transform: translateY(-5px);
-				background: rgba(255, 255, 255, 0.15);
-				border-color: rgba(255, 255, 255, 0.2);
+				background: rgba(255, 255, 255, 0.1);
+				border-color: rgba(100, 181, 246, 0.3);
 			}
 
 			.vision-point h3 {
 				color: #64B5F6;
-				margin-bottom: 1em;
+				margin-bottom: 0.5em;
+				font-size: 1.2em;
+				display: flex;
+				align-items: center;
 			}
 
 			.vision-point i {
+				font-size: 1.5em;
 				margin-right: 0.5em;
+				color: #64B5F6;
+			}
+
+			.vision-point p {
+				color: rgba(255, 255, 255, 0.9);
+				line-height: 1.4;
+				font-size: 0.95em;
+				margin: 0;
 			}
 
 			/* Contact Section Styles */
@@ -349,8 +362,9 @@
 			</section>
 
 		<!-- Vision -->
-			<section id="vision" class="main style3 primary">
-				<div class="content">
+			<section id="vision" class="main style2 left dark fullscreen">
+				<div class="section-background"></div>
+				<div class="content box style2">
 					<header>
 						<h2>Our Vision</h2>
 					</header>
@@ -369,6 +383,7 @@
 						</div>
 					</div>
 				</div>
+				<a href="#contact" class="button style2 down anchored">Next</a>
 			</section>
 
 		<!-- Contact -->
