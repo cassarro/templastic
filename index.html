@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Templastic - Shaping the Future of Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.ai-image {
+				border-radius: 15px;
+				box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+				max-width: 100%;
+				height: auto;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			
+			.ai-image:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+			}
+			
+			.image-container {
+				margin: 2em 0;
+				text-align: center;
+				width: 100%;
+				overflow: hidden;
+			}
+
+			.split-content {
+				display: flex;
+				align-items: center;
+				gap: 4em;
+				margin: 2em 0;
+				padding: 2em;
+			}
+
+			.split-content > * {
+				flex: 1;
+			}
+
+			.content.box {
+				max-width: 100%;
+				width: 100%;
+				padding: 3em;
+			}
+
+			.content.box.style2 {
+				max-width: 75%;
+				width: 75%;
+				padding: 3em;
+				position: relative;
+				z-index: 1;
+				background: rgba(27, 31, 34, 0.92);
+				backdrop-filter: blur(10px);
+				border-radius: 15px;
+				margin: 0 auto;
+				border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+
+			.section-background {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-size: cover;
+				background-position: center;
+				opacity: 0.3;
+				transition: opacity 0.3s ease;
+			}
+
+			#one {
+				position: relative;
+				overflow: hidden;
+			}
+
+			#one .section-background {
+				background-image: url('images/ai-education/fulls/ai-learning-platform.jpg');
+			}
+
+			#one::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+				z-index: 1;
+			}
+
+			#one .content {
+				color: #fff;
+				text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+			}
+
+			#one h2 {
+				color: #64B5F6;
+				margin-bottom: 1em;
+				font-size: 2.5em;
+			}
+
+			#one p {
+				color: rgba(255, 255, 255, 0.95);
+				font-size: 1.2em;
+				line-height: 1.6;
+				margin-bottom: 1em;
+			}
+
+			#one .highlight {
+				color: #64B5F6;
+				font-weight: bold;
+			}
+
+			#two {
+				position: relative;
+				overflow: hidden;
+			}
+
+			#two .section-background {
+				background-image: url('images/ai-education/fulls/cartoon-ai-robot-character-scene.jpg');
+				opacity: 0.3;
+			}
+
+			#two::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+				z-index: 1;
+			}
+
+			#two h2 {
+				color: #64B5F6;
+				margin-bottom: 0.8em;
+				font-size: 2.5em;
+			}
+
+			.audience-segments {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1.5em;
+				margin-top: 1.5em;
+			}
+
+			.audience-segment {
+				background: rgba(255, 255, 255, 0.15);
+				padding: 1.5em;
+				border-radius: 15px;
+				transition: all 0.3s ease;
+				backdrop-filter: blur(5px);
+				border: 1px solid rgba(255, 255, 255, 0.2);
+				color: #fff;
+			}
+
+			.audience-segment:hover {
+				transform: translateY(-5px);
+				background: rgba(255, 255, 255, 0.25);
+				border-color: rgba(255, 255, 255, 0.3);
+			}
+
+			.audience-segment h3 {
+				color: #64B5F6;
+				margin-bottom: 0.5em;
+				font-size: 1.2em;
+				display: flex;
+				align-items: center;
+			}
+
+			.audience-segment i {
+				font-size: 1.5em;
+				margin-right: 0.5em;
+				color: #64B5F6;
+			}
+
+			.audience-segment p {
+				color: rgba(255, 255, 255, 0.9);
+				line-height: 1.4;
+				font-size: 0.95em;
+				margin: 0;
+			}
+
+			#intro {
+				background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/ai-education/fulls/future-education.jpg') center center;
+				background-size: cover;
+				position: relative;
+			}
+
+			#intro::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+			}
+
+			/* Vision Section Styles */
+			.vision-container {
+				display: flex;
+				gap: 2em;
+				margin: 2em 0;
+			}
+
+			.vision-point {
+				flex: 1;
+				background: rgba(255, 255, 255, 0.1);
+				padding: 2em;
+				border-radius: 15px;
+				transition: all 0.3s ease;
+				border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+
+			.vision-point:hover {
+				transform: translateY(-5px);
+				background: rgba(255, 255, 255, 0.15);
+				border-color: rgba(255, 255, 255, 0.2);
+			}
+
+			.vision-point h3 {
+				color: #64B5F6;
+				margin-bottom: 1em;
+			}
+
+			.vision-point i {
+				margin-right: 0.5em;
+			}
+
+			/* Contact Section Styles */
+			.contact-container {
+				display: flex;
+				gap: 4em;
+				align-items: center;
+				margin: 2em 0;
+			}
+
+			.contact-image {
+				flex: 1;
+				order: -1;
+			}
+
+			.contact-form {
+				flex: 1;
+			}
+
+			@media screen and (max-width: 980px) {
+				.split-content {
+					flex-direction: column;
+					gap: 2em;
+					padding: 1em;
+				}
+
+				.audience-segments {
+					grid-template-columns: 1fr;
+					gap: 1em;
+				}
+
+				.audience-segment {
+					padding: 1.2em;
+				}
+
+				#two h2 {
+					font-size: 2em;
+				}
+
+				.content.box {
+					padding: 2em;
+				}
+
+				.content.box.style2 {
+					max-width: 90%;
+					width: 90%;
+					padding: 2em;
+				}
+
+				.vision-container {
+					flex-direction: column;
+				}
+
+				.contact-container {
+					flex-direction: column;
+					gap: 2em;
+				}
+
+				.contact-image {
+					order: 0;
+				}
+			}
+
+			/* Animation classes */
+			.fade-in {
+				opacity: 0;
+				animation: fadeIn 1s ease forwards;
+			}
+
+			.slide-in {
+				opacity: 0;
+				transform: translateY(20px);
+				animation: slideIn 1s ease forwards;
+			}
+
+			@keyframes fadeIn {
+				to { opacity: 1; }
+			}
+
+			@keyframes slideIn {
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Templastic</h1>
+				<nav>
+					<ul>
+						<li><a href="#intro">Home</a></li>
+						<li><a href="#one">Problem</a></li>
+						<li><a href="#two">Who We Serve</a></li>
+						<li><a href="#vision">Vision</a></li>
+						<li><a href="#contact">Join Waitlist</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content">
+					<header class="fade-in">
+						<h2>Shaping the Future of Learning</h2>
+					</header>
+					<p class="slide-in">An intelligent platform for educators, learners, and organisations.</p>
+					<footer>
+						<a href="#contact" class="button style2 fade-in">Join the Waitlist</a>
+					</footer>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="section-background"></div>
+				<div class="content box style2">
+					<header class="fade-in">
+						<h2>The Problem We're Solving</h2>
+					</header>
+					<div class="fade-in">
+						<p>We're working on a solution that brings <span class="highlight">simplicity</span>, <span class="highlight">speed</span>, and <span class="highlight">personalisation</span> to education and training.</p>
+						<p>Our platform leverages cutting-edge AI to transform how educational content is created, delivered, and experienced.</p>
+					</div>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="section-background"></div>
+				<div class="content box style2">
+					<header class="fade-in">
+						<h2>Who We Serve</h2>
+					</header>
+					<div class="audience-segments">
+						<div class="audience-segment slide-in">
+							<h3><i class="fas fa-school"></i>Schools & Educators</h3>
+							<p>Transform your teaching with AI-powered content creation and personalized learning paths that adapt to each student's needs.</p>
+						</div>
+						<div class="audience-segment slide-in">
+							<h3><i class="fas fa-users"></i>Training Teams & L&D Professionals</h3>
+							<p>Scale your training programs efficiently with intelligent content generation and automated assessment tools.</p>
+						</div>
+						<div class="audience-segment slide-in">
+							<h3><i class="fas fa-home"></i>Parents & Home Educators</h3>
+							<p>Create engaging learning experiences at home with easy-to-use tools that make education interactive and fun.</p>
+						</div>
+						<div class="audience-segment slide-in">
+							<h3><i class="fas fa-book"></i>Curriculum Developers</h3>
+							<p>Design adaptive learning pathways that evolve with learner progress and provide meaningful insights.</p>
+						</div>
+					</div>
+				</div>
+				<a href="#vision" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Vision -->
+			<section id="vision" class="main style3 primary">
+				<div class="content">
+					<header class="fade-in">
+						<h2>Our Vision</h2>
+					</header>
+					<div class="vision-container">
+						<div class="vision-point slide-in">
+							<h3><i class="fas fa-brain"></i> Adaptive Learning</h3>
+							<p>"We believe content should adapt to learners—not the other way around."</p>
+						</div>
+						<div class="vision-point slide-in">
+							<h3><i class="fas fa-clock"></i> Efficiency</h3>
+							<p>"Imagine creating a full, interactive experience in minutes, not hours."</p>
+						</div>
+						<div class="vision-point slide-in">
+							<h3><i class="fas fa-users"></i> Inclusive Education</h3>
+							<p>"We're combining human intuition with intelligent systems to make learning scalable, inclusive, and engaging."</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content">
+					<header class="fade-in">
+						<h2>Be the First to Know</h2>
+						<p>Join our waitlist to get early access and updates about Templastic.</p>
+					</header>
+					<div class="contact-container">
+						<div class="contact-image slide-in">
+							<img src="images/ai-education/fulls/ai-education-collaboration.jpg" alt="AI Education Collaboration" class="ai-image" />
+						</div>
+						<div class="contact-form slide-in">
+							<div class="box">
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
+										<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
+										<div class="field">
+											<select name="role" required>
+												<option value="">Select Your Role</option>
+												<option value="teacher">Teacher</option>
+												<option value="parent">Parent</option>
+												<option value="org">Organization</option>
+												<option value="other">Other</option>
+											</select>
+										</div>
+									</div>
+									<ul class="actions special">
+										<li><input type="submit" value="Join Waitlist" /></li>
+									</ul>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Templastic 2024</li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+
+	</body>
+</html>
