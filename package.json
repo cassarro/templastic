@@ -1,0 +1,28 @@
+{
+  "name": "templastic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "minify:js": "uglifyjs assets/js/*.js -o assets/js/main.min.js",
+    "minify:css": "cleancss -o assets/css/main.min.css assets/css/main.css",
+    "minify:html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true --input-dir ./ --output-dir ./dist --file-ext html",
+    "minify": "npm run minify:js && npm run minify:css && npm run minify:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassarro/templastic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassarro/templastic/issues"
+  },
+  "homepage": "https://github.com/cassarro/templastic#readme",
+  "description": "",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.17.4"
+  }
+}
