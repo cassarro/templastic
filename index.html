@@ -430,7 +430,7 @@
 						</div>
 						<div class="contact-form slide-in">
 							<div class="box">
-								<form method="post" action="#">
+								<form method="post" action="#" id="waitlistForm">
 									<div class="fields">
 										<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
 										<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
@@ -458,8 +458,8 @@
 			<footer id="footer">
 				<!-- Menu -->
 					<ul class="menu">
-						<li>&copy; Templastic 2024</li>
-						<li><a href="#">Privacy Policy</a></li>
+						<li>&copy; Templastic 2025</li>
+						<li><a href="privacy-policy.html">Privacy Policy</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 			</footer>
@@ -475,5 +475,29 @@
 			<script src="assets/js/main.js"></script>
 			<script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
 
+			<!-- Success Popup -->
+			<div id="successPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+				background: rgba(27, 31, 34, 0.95); padding: 2em; border-radius: 15px; z-index: 1000; text-align: center;
+				box-shadow: 0 0 20px rgba(0,0,0,0.5); border: 1px solid rgba(100, 181, 246, 0.2); color: white;">
+				<h3 style="color: #64B5F6; margin-bottom: 1em;">Thank You!</h3>
+				<p>You've been added to our waitlist. We'll keep you updated on our progress.</p>
+				<button onclick="closeSuccessPopup()" style="margin-top: 1em; background: #64B5F6; border: none; 
+					padding: 0.5em 1em; border-radius: 5px; cursor: pointer; color: white;">Close</button>
+			</div>
+
+			<script>
+				// Handle form submission
+				document.getElementById('waitlistForm').addEventListener('submit', function(e) {
+					e.preventDefault();
+					// Here you would typically handle the form submission to your backend
+					// For now, we'll just show the success popup
+					document.getElementById('successPopup').style.display = 'block';
+					this.reset(); // Reset the form
+				});
+
+				function closeSuccessPopup() {
+					document.getElementById('successPopup').style.display = 'none';
+				}
+			</script>
 	</body>
 </html>
