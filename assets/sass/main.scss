@@ -108,3 +108,32 @@
 			}
 		}
 	}
+
+.main {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+	background-color: #1f2328;
+
+	&.style1 {
+		background: url('images/overlay.png');
+		color: #fff;
+
+		h2 {
+			font-size: 3.25em;
+			line-height: 1em;
+			letter-spacing: -0.025em;
+		}
+	}
+
+	&.style2 {
+		background: url('images/overlay.png');
+		color: #fff;
+
+		h2 {
+			font-size: 2.25em;
+			line-height: 1.5em;
+			letter-spacing: -0.025em;
+		}
+	}
+}
