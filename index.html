@@ -268,6 +268,11 @@
 					padding: 2em;
 				}
 
+				.audience-segments {
+					grid-template-columns: 1fr;
+					gap: 1em;
+				}
+
 				.vision-container {
 					flex-direction: column;
 				}
@@ -279,6 +284,115 @@
 
 				.contact-image {
 					order: 0;
+				}
+
+				/* Improved mobile typography */
+				h1 {
+					font-size: 1.75em !important;
+				}
+
+				h2 {
+					font-size: 1.5em !important;
+					margin-bottom: 0.5em !important;
+				}
+
+				h3 {
+					font-size: 1.1em !important;
+				}
+
+				p {
+					font-size: 0.9em !important;
+					line-height: 1.5 !important;
+				}
+
+				/* Better spacing on mobile */
+				.content {
+					padding: 2em 1em;
+				}
+
+				.audience-segment, .vision-point {
+					padding: 1.25em;
+				}
+
+				/* Improved form layout */
+				.fields {
+					margin: -0.5em;
+				}
+
+				.field.half {
+					width: 100%;
+					padding: 0.5em;
+					float: none;
+				}
+
+				/* Better button sizing */
+				.button {
+					padding: 0.5em 1.25em;
+					font-size: 0.9em;
+				}
+
+				/* Improved navigation */
+				#header nav {
+					padding: 0 1em;
+				}
+
+				#header nav ul li a {
+					padding: 0.5em;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				.content.box.style2 {
+					max-width: 95%;
+					width: 95%;
+					padding: 1.5em;
+				}
+
+				/* Even smaller text adjustments */
+				h1 {
+					font-size: 1.5em !important;
+				}
+
+				h2 {
+					font-size: 1.25em !important;
+				}
+
+				p {
+					font-size: 0.85em !important;
+				}
+
+				/* Tighter spacing */
+				.audience-segment, .vision-point {
+					padding: 1em;
+				}
+
+				/* Minimal padding for very small screens */
+				.content {
+					padding: 1.5em 0.75em;
+				}
+
+				/* Stack all flex items */
+				.split-content {
+					flex-direction: column;
+					gap: 2em;
+					padding: 1em;
+				}
+
+				/* Adjust icon sizes */
+				.audience-segment i, .vision-point i {
+					font-size: 1.25em;
+				}
+
+				/* Better form spacing */
+				.field {
+					padding: 0.4em;
+				}
+
+				input[type="text"],
+				input[type="email"],
+				select {
+					padding: 0.5em;
+					font-size: 0.9em;
 				}
 			}
 		</style>
